@@ -22,7 +22,7 @@ public class TC01IfUserIsInvalidTryAgainTest
     public void SetUp()
     {
         ChromeOptions options = new ChromeOptions();
-        options.AddArguments("--headless-new");
+        options.AddArguments("--headless=new");
 
         driver = new ChromeDriver(options);
         js = (IJavaScriptExecutor)driver;
