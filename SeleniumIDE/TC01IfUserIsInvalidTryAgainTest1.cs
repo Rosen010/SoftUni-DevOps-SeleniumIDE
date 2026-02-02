@@ -24,7 +24,7 @@ public class TC01IfUserIsInvalidTryAgainTest
         ChromeOptions options = new ChromeOptions();
         options.AddArguments("--headless-new");
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         js = (IJavaScriptExecutor)driver;
         vars = new Dictionary<string, object>();
     }
